@@ -1,0 +1,70 @@
+.about {
+	position: relative;
+	z-index: 1;
+
+	width: 100%;
+	height: 755px;
+	margin-top: -103px;
+
+	background: url(%=staticPrefixForCss=%general/about-bg.png) no-repeat;
+	background-size: 100% 100%;
+	@media screen and (max-width: 960px) {
+		height: 440px;
+
+		background-position: center;
+		background-size: cover;
+	}
+	@media screen and (max-width: 1600) {
+		height: 713px;
+		margin-top: -93px;
+	}
+	@media screen and (max-width: 1280) {
+		height: 755px;
+		margin-top: -73px;
+	}
+	&__content {
+		position: absolute;
+		top: 88px;
+		right: 0;
+		left: 0;
+
+		box-sizing: border-box;
+		width: 1056px;
+		height: 535px;
+		margin: auto;
+		padding-top: 122px;
+
+		background: url(%=staticPrefixForCss=%general/border-about.png) no-repeat center;
+		@media screen and (max-width: 960px) {
+			top: 40px;
+
+			width: 100%;
+			height: 440px;
+			padding-top: 20px;
+			padding-right: 15px;
+			padding-left: 15px;
+
+			background: none;
+		}
+	}
+	&__title {
+		text-align: center;
+
+		@extend .title;
+	}
+	&__text {
+		width: 434px;
+		margin: 48px auto 0;
+
+		text-align: justify;
+
+		color: #fff;
+
+		font-family: "VentiCF-Medium";
+		font-size: em(20px);
+		@media screen and (max-width: 960px) {
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+}

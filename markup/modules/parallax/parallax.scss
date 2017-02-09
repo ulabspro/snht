@@ -1,0 +1,9 @@
+.parallax {
+	position: relative;
+
+	overflow: hidden;
+
+	background: url(%=staticPrefixForCss=%general/overlay.jpg) no-repeat;
+	background-position: center -120px;
+	transition: all .2s linear;
+}

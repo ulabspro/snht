@@ -1,0 +1,12 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.title {
+	color: #fff;
+
+	font-family: "IntroHeadBUC-GBaseShade";
+	font-size: em(74px);
+	@media screen and (max-width: 960px) {
+		font-size: em(48px);
+	}
+}

@@ -1,0 +1,86 @@
+.price-content {
+	position: absolute;
+	z-index: 0;
+	top: -130px;
+
+	width: 100%;
+
+	text-align: center;
+
+	color: #cfb390;
+
+	font-size: em(17.74px);
+	&__item {
+		position: relative;
+
+		display: inline-block;
+
+		margin: 0 15px;
+
+		vertical-align: top;
+		span {
+			position: absolute;
+
+			display: none;
+
+			padding: 3px 5px 1px;
+
+			color: #cfb390;
+			background-color: #251c15;
+
+			font-family: "VentiCF-DemiBold";
+			font-size: em(12px);
+		}
+		&:hover {
+			span {
+				display: block;
+			}
+		}
+		&--photo {
+			@include bg($photo);
+			span {
+				right: -35px;
+				bottom: -15px;
+			}
+		}
+		&--document {
+			@include bg($document);
+			span {
+				right: -50px;
+				bottom: -5px;
+			}
+		}
+	}
+	th {
+		font-family: "VentiCF-Medium";
+		&:first-child {
+			padding-left: 40px;
+		}
+		&:last-child {
+			padding-right: 30px;
+		}
+	}
+	tr {
+		height: 96px;
+
+		border-bottom: 2px solid #77634f;
+	}
+	tbody {
+		tr {
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+	td {
+		font-family: "VentiCF-Bold";
+		&:first-child {
+			padding-left: 40px;
+
+			color: #fff;
+		}
+		&:last-child {
+			padding-right: 30px;
+		}
+	}
+}

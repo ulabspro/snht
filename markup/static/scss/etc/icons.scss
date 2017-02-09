@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* snht */
+@font-face {
+  font-family: "snht";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("https://fontastic.s3.amazonaws.com/fuPrBCQ52XrPuHQpnw9JyA/fonts/1445320898.eot?#iefix") format("embedded-opentype"),
+  url("https://fontastic.s3.amazonaws.com/fuPrBCQ52XrPuHQpnw9JyA/fonts/1445320898.woff") format("woff"),
+  url("https://fontastic.s3.amazonaws.com/fuPrBCQ52XrPuHQpnw9JyA/fonts/1445320898.ttf") format("truetype"),
+  url("https://fontastic.s3.amazonaws.com/fuPrBCQ52XrPuHQpnw9JyA/fonts/1445320898.svg#1445320898") format("svg");
+  src: url("https://fontastic.s3.amazonaws.com/fuPrBCQ52XrPuHQpnw9JyA/fonts/1445320898.eot");
+}
+
+[data-icon]:before {
+  content: attr(data-icon);
+  text-transform: none !important;
+
+  font-family: "snht" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+}
+
+.icon:before,
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  text-transform: none !important;
+
+  font-family: "snht" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+}
+
+.icon-advantages-1:before {
+  content: "a";
+}
+.icon-advantages-2:before {
+  content: "b";
+}
+.icon-advantages-3:before {
+  content: "c";
+}
+.icon-cellphone-black:before {
+  content: "d";
+}
+.icon-cellphone-white:before {
+  content: "e";
+}
+.icon-close:before {
+  content: "f";
+}
+.icon-deal-support-1:before {
+  content: "g";
+}
+.icon-deal-support-2:before {
+  content: "h";
+}
+.icon-deal-support-3:before {
+  content: "i";
+}
+.icon-earth:before {
+  content: "j";
+}
+.icon-globus:before {
+  content: "k";
+}
+.icon-home:before {
+  content: "l";
+}
+.icon-menu:before {
+  content: "m";
+}
+.icon-post:before {
+  content: "n";
+}
+.icon-search:before {
+  content: "o";
+}
+.icon-cogwheel-5:before {
+  content: "p";
+}
+.icon-cogwheel-1:before {
+  content: "q";
+}
+.icon-cogwheel-2:before {
+  content: "r";
+}
+.icon-cogwheel-3:before {
+  content: "s";
+}
+.icon-cogwheel-4:before {
+  content: "t";
+}
+.icon-cogwheel-6:before {
+  content: "u";
+}

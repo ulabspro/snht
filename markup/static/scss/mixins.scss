@@ -1,0 +1,54 @@
+// Mixins.
+
+@mixin nl {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    list-style-position: outside;
+
+    text-indent: 0;
+}
+
+@mixin cf {
+    &:before,
+    &:after {
+        display: table;
+
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+    .lt-ie8 & {
+        zoom: 1;
+    }
+}
+
+@mixin blocks-justify {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+@mixin content($position: absolute) {
+    position: $position;
+
+    display: block;
+
+    content: "";
+}
+
+@mixin view {
+    box-sizing: border-box;
+    width: 1200px;
+    margin: auto;
+    @media screen and (max-width: 960px) {
+        width: 100%;
+    }
+}
+
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+// You can add your own mixins here:

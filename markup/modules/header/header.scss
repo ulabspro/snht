@@ -1,0 +1,52 @@
+.header {
+	display: flex;
+
+	margin-bottom: -171px !important;
+	padding-right: 16px;
+	padding-left: 16px;
+
+	align-items: flex-start;
+	@include view;
+	justify-content: space-between;
+	&--inside {
+		margin-bottom: 0 !important;
+	}
+	@media screen and (max-width: 960px) {
+		align-items: center;
+	}
+}
+
+.header-menu,
+.header-call {
+	position: relative;
+
+	width: 69px;
+	height: 69px;
+	margin-top: 34px;
+	@media screen and (max-width: 960px) {
+		margin-top: 14px;
+	}
+	&:after,
+	&:before {
+		width: 69px;
+		height: 69px;
+
+		@include content;
+	}
+	&:hover {
+		&:before {
+			@include clockwise(8s);
+		}
+	}
+}
+
+.header-call {
+	z-index: 100;
+	&:after {
+		background: url(%=staticPrefixForCss=%general/phone.svg) no-repeat center center;
+		background-size: 30px 34px;
+	}
+	&:before {
+		background: url(%=staticPrefixForCss=%general/cogwheel-empty.svg) no-repeat;
+	}
+}

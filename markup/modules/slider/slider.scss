@@ -1,0 +1,39 @@
+.slider {
+	width: 100%;
+	height: 675px;
+
+	background: url(%=staticPrefixForCss=%general/slider.jpg) no-repeat ;
+	background-size: cover;
+
+	@media screen and (max-width: 960px) {
+		background-position: center bottom;
+	}
+}
+
+#slider {
+	top: 300px;
+
+	padding-left: 170px;
+
+	@include view;
+
+	@media screen and (max-width: 960px) {
+		box-sizing: border-box;
+		padding-left: 10px;
+	}
+}
+
+.slide-content {
+	color: #fff;
+
+	font-family: "VentiCF-Bold";
+	font-size: em(73.72px);
+	line-height: 100px;
+	span {
+		border-bottom: 5px solid $light-brown;
+	}
+
+	@media screen and (max-width: 960px) {
+		font-size: em(53px);
+	}
+}

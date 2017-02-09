@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 118.5 118.5" enable-background="new 0 0 118.5 118.5" xml:space="preserve">
+<g id="Слой_2">
+	<circle fill-rule="evenodd" clip-rule="evenodd" fill="#2F281C" cx="59.2" cy="59.2" r="59.2"/>
+	<radialGradient id="SVGID_1_" cx="40.738" cy="24.8037" r="12.809" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#1C1917"/>
+		<stop  offset="0.6213" style="stop-color:#292319"/>
+		<stop  offset="1" style="stop-color:#2F281C"/>
+	</radialGradient>
+	<circle fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_1_)" cx="40.7" cy="24.8" r="12.8"/>
+	<radialGradient id="SVGID_2_" cx="33.4911" cy="53.6223" r="12.809" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#2F281C"/>
+		<stop  offset="0.5521" style="stop-color:#1C1917"/>
+		<stop  offset="0.8304" style="stop-color:#292319"/>
+		<stop  offset="1" style="stop-color:#2F281C"/>
+	</radialGradient>
+	<circle fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_2_)" cx="33.5" cy="53.6" r="12.8"/>
+	<radialGradient id="SVGID_3_" cx="37.4761" cy="53.5005" r="22.3659" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.3804" style="stop-color:#2F281C"/>
+		<stop  offset="0.8098" style="stop-color:#261F16"/>
+		<stop  offset="0.8763" style="stop-color:#292319"/>
+		<stop  offset="1" style="stop-color:#2F281C"/>
+	</radialGradient>
+	<circle fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_3_)" cx="37.5" cy="53.5" r="22.4"/>
+	<radialGradient id="SVGID_4_" cx="70.6104" cy="84.0524" r="22.3657" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.3804" style="stop-color:#2F281C"/>
+		<stop  offset="0.8098" style="stop-color:#261F16"/>
+		<stop  offset="0.8763" style="stop-color:#292319"/>
+		<stop  offset="1" style="stop-color:#2F281C"/>
+	</radialGradient>
+	<circle fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_4_)" cx="70.6" cy="84.1" r="22.4"/>
+	<radialGradient id="SVGID_5_" cx="72.0848" cy="42.7488" r="32.543" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.3804" style="stop-color:#2F281C"/>
+		<stop  offset="0.8098" style="stop-color:#261F16"/>
+		<stop  offset="0.8763" style="stop-color:#292319"/>
+		<stop  offset="1" style="stop-color:#2F281C"/>
+	</radialGradient>
+	<circle fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_5_)" cx="72.1" cy="42.7" r="32.5"/>
+</g>
+</svg>

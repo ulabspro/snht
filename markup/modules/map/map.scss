@@ -1,0 +1,15 @@
+.map {
+	position: relative;
+	z-index: -1;
+
+	overflow: hidden;
+
+	width: 100%;
+	margin: -110px auto 0;
+	img {
+		width: 100%;
+	}
+}
+#map {
+	height: 525px;
+}

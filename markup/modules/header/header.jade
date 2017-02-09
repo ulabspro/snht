@@ -1,0 +1,6 @@
+mixin header()
+	- var modifiers = attributes.class || '';
+	header.header(class="#{modifiers}")
+		+menu()
+		+logo()
+		a(href="#" title="").header-call

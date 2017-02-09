@@ -1,0 +1,424 @@
+.contact {
+	position: relative;
+
+	display: flex;
+
+	box-sizing: border-box;
+	width: 100%;
+	height: 520px;
+	margin-top: -72px;
+	padding-top: 168px;
+
+	background: url(%=staticPrefixForCss=%general/contact-bg.png) no-repeat;
+	background-size: 100% 100%;
+
+	justify-content: center;
+	@media screen and (max-width: 960px) {
+		height: 815px;
+
+		background-position: center;
+		background-size: cover;
+
+		flex-wrap: wrap;
+	}
+}
+
+.form {
+	position: relative;
+	z-index: 1;
+
+	width: 570px;
+	@media screen and (max-width: 960px) {
+		width: 90%;
+	}
+	&__row {
+		display: flex;
+
+		width: 100%;
+		margin-bottom: 4px;
+
+		align-items: flex-start;
+		justify-content: space-between;
+		&--left {
+			justify-content: flex-start;
+		}
+		@media screen and (max-width: 960px) {
+			margin-bottom: 10px;
+
+			flex-wrap: wrap;
+		}
+	}
+	&__column {
+		width: 49.5%;
+		@media screen and (max-width: 960px) {
+			position: relative;
+			z-index: 99;
+
+			width: 100%;
+			margin-top: 10px;
+		}
+	}
+	&__element {
+		box-sizing: border-box;
+		width: 100%;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 6px;
+
+		color: #000;
+		border: 0;
+		background-color: rgba(255,255,255,.3);
+
+		font-size: em(10px);
+		&:focus {
+			outline: none;
+		}
+		&--textarea {
+			height: 107px;
+			padding-top: 6px;
+		}
+	}
+	&__submit {
+		position: relative;
+		z-index: 1;
+
+		width: 124px;
+		height: 16px;
+
+		text-align: center;
+
+		color: #fff;
+		border: 1px solid #fff;
+		border-radius: 10px;
+		background-color: $dark-brown;
+
+		font-family: "VentiCF-Bold";
+		font-size: em(11px);
+	}
+	&__reset,
+	&__send {
+		position: relative;
+
+		margin-top: 27px;
+		margin-right: 40px;
+		@media screen and (max-width: 960px) {
+			margin-bottom: 10px;
+			margin-left: 10px;
+		}
+	}
+	&__reset {
+		&:hover {
+			.form-cogwheel-10,
+			.form-cogwheel-11,
+			.form-cogwheel-12 {
+				@include clockwise(2s);
+			}
+			.form-cogwheel-13 {
+				@include counterclock-wise(5s);
+			}
+		}
+	}
+	&__send {
+		&:hover {
+			.form-cogwheel-14,
+			.form-cogwheel-16,
+			.form-cogwheel-17 {
+				@include clockwise(2s);
+			}
+		}
+	}
+}
+
+.form-cogwheels {
+	position: absolute;
+	z-index: -1;
+
+	width: 570px;
+	height: 200px;
+}
+
+.form-cogwheel-1 {
+	position: absolute;
+	top: -60px;
+	left: -10px;
+
+	width: 118px;
+	height: 118px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-1.svg) no-repeat;
+
+	@include clockwise(10s);
+}
+
+.form-cogwheel-2 {
+	position: absolute;
+	top: -15px;
+	left: -40px;
+
+	width: 60px;
+	height: 60px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-5.svg) no-repeat;
+
+	@include counterclock-wise(3s);
+}
+
+.form-cogwheel-3 {
+	position: absolute;
+	top: -5px;
+	left: -30px;
+
+	width: 40px;
+	height: 40px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-2.svg) no-repeat;
+
+	@include clockwise(2s);
+}
+
+.form-cogwheel-4 {
+	position: absolute;
+	top: 35px;
+	left: -50px;
+
+	width: 85px;
+	height: 85px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-1.svg) no-repeat;
+
+	@include counterclock-wise(11s);
+}
+
+.form-cogwheel-5 {
+	position: absolute;
+	z-index: 3;
+	right: -40px;
+	bottom: 160px;
+
+	width: 85px;
+	height: 85px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-1.svg) no-repeat;
+
+	@include counterclock-wise(11s);
+}
+
+.form-cogwheel-6 {
+	position: absolute;
+	z-index: 4;
+	right: -18px;
+	bottom: 183px;
+
+	width: 40px;
+	height: 40px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-2.svg) no-repeat;
+
+	@include clockwise(2s);
+}
+
+.form-cogwheel-7 {
+	position: absolute;
+	z-index: 2;
+	right: 18px;
+	bottom: 212px;
+
+	width: 32px;
+	height: 32px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-3.svg) no-repeat;
+
+	@include clockwise(2s);
+}
+
+.form-cogwheel-8 {
+	position: absolute;
+	z-index: 1;
+	right: -18px;
+	bottom: 218px;
+
+	width: 45px;
+	height: 45px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-4.svg) no-repeat;
+
+	@include clockwise(2s);
+}
+
+.form-cogwheel-9 {
+	position: absolute;
+	z-index: 1;
+	top: 12px;
+	right: -5px;
+
+	width: 25px;
+	height: 25px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-4.svg) no-repeat;
+
+	@include clockwise(2s);
+}
+
+.form-cogwheel-10 {
+	position: absolute;
+	z-index: 1;
+	top: -20px;
+	left: 0;
+
+	width: 35px;
+	height: 35px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-9.svg) no-repeat;
+}
+
+.form-cogwheel-11 {
+	position: absolute;
+	z-index: 4;
+	top: -3px;
+	left: -5px;
+
+	width: 24px;
+	height: 24px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-2.svg) no-repeat;
+}
+
+.form-cogwheel-12 {
+	position: absolute;
+	z-index: 2;
+	top: -9px;
+	right: -15px;
+
+	width: 36px;
+	height: 36px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-2.svg) no-repeat;
+}
+
+.form-cogwheel-13 {
+	position: absolute;
+	z-index: 2;
+	top: -4px;
+	right: -10px;
+
+	width: 26px;
+	height: 26px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-10.svg) no-repeat;
+}
+
+.form-cogwheel-14 {
+	position: absolute;
+	z-index: 1;
+	top: -20px;
+	left: 0;
+
+	width: 35px;
+	height: 35px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-9.svg) no-repeat;
+}
+
+.form-cogwheel-15 {
+	position: absolute;
+	z-index: 4;
+	top: -8px;
+	left: -10px;
+
+	width: 34px;
+	height: 27px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-11.svg) no-repeat;
+}
+
+.form-cogwheel-belt {
+	position: absolute;
+	z-index: 1;
+	top: -8px;
+	left: 16px;
+
+	width: 144px;
+	height: 33px;
+
+	background: url(%=staticPrefixForCss=%general/belt.svg) no-repeat;
+}
+
+.form-cogwheel-16 {
+	position: absolute;
+	z-index: 2;
+	top: -5px;
+	right: -15px;
+
+	width: 30px;
+	height: 30px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-10.svg) no-repeat;
+}
+
+.form-cogwheel-17 {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	right: -10px;
+
+	width: 20px;
+	height: 20px;
+
+	background: url(%=staticPrefixForCss=%general/cogwheel-2.svg) no-repeat;
+}
+
+.contact-blocks {
+	width: 180px;
+	margin-left: 35px;
+	@media screen and (max-width: 960px) {
+		width: 100%;
+		margin-top: -60px;
+		margin-left: 20px;
+	}
+	&__item {
+		position: relative;
+
+		margin-bottom: 10px;
+		padding-left: 18px;
+
+		color: $light-brown;
+
+		font-size: em(10.52px);
+		&:hover {
+			color: #fff;
+		}
+		&:before {
+			left: 0;
+
+			width: 10px;
+			height: 10px;
+
+			@include content;
+		}
+		&--address {
+			&:before {
+				background: url(%=staticPrefixForCss=%general/home.svg) no-repeat;
+			}
+		}
+		&--phone {
+			&:before {
+				background: url(%=staticPrefixForCss=%general/cellphone.svg) no-repeat;
+			}
+		}
+		&--mail {
+			&:before {
+				background: url(%=staticPrefixForCss=%general/mail.svg) no-repeat;
+			}
+		}
+		&--earth {
+			&:before {
+				background: url(%=staticPrefixForCss=%general/earth.svg) no-repeat;
+			}
+		}
+		&--globus {
+			&:before {
+				background: url(%=staticPrefixForCss=%general/globus.svg) no-repeat;
+			}
+		}
+	}
+}

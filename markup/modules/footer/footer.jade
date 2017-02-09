@@ -1,0 +1,15 @@
+mixin footer(data)
+	- var modifiers = attributes.class || '';
+	footer.footer(class="#{modifiers}")
+		.footer__wrapper
+			.footer__copyright Copyright @ 2015 Anna Sbitneva. All Rights Reserved.
+			.footer-menu
+				a(href="#" title="").footer-menu__item Home
+				a(href="#" title="").footer-menu__item About
+				a(href="#" title="").footer-menu__item Projects
+				a(href="#" title="").footer-menu__item News
+				a(href="#" title="").footer-menu__item Contact
+
+	//- Main scripts. You can replace it, but I recommend you to leave it here
+	//- script(src='%=staticPrefix=%js/vendor.js')
+	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')

@@ -1,0 +1,78 @@
+// Common styles of the project
+
+html,
+body {
+	font-family: "VentiCF-DemiBold";
+	&.active {
+		overflow: hidden;
+	}
+	&.inside {
+		background: #000 url(%=staticPrefixForCss=%general/body-inside.jpg) no-repeat;
+		background-position: 0 center;
+		background-size: 100%;
+	}
+	@media screen and (max-width: 960px) {
+		overflow-x: hidden;
+	}
+}
+
+.inside-frame {
+	width: 1055px;
+	margin: 150px auto;
+	&__top,
+	&__bottom {
+		width: 1055px;
+		height: 160px;
+		position: relative;
+		z-index: 1;
+	}
+	&__top {
+		background: url(%=staticPrefixForCss=%general/inside-page-frame-top.png) no-repeat center;
+	}
+	&__bottom {
+		background: url(%=staticPrefixForCss=%general/inside-page-frame-bottom.png) no-repeat center;
+	}
+	&__content {
+		position: relative;	
+		width: 1033px;
+		margin: 10px auto;
+
+		border-right: 4px solid #cfb390;
+		border-left: 4px solid #cfb390;
+	}
+}
+
+@mixin clockwise($speed: 10s) {
+	animation: clockwise $speed linear 100ms infinite;
+}
+
+@mixin counterclock-wise($speed: 10s) {
+	animation: counterclock-wise $speed linear 100ms infinite;
+}
+
+@keyframes "clockwise" {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes "counterclock-wise" {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes "close" {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
+}

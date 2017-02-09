@@ -1,0 +1,103 @@
+.deal-support {
+	@extend .about;
+	@media screen and (max-width: 960px) {
+		min-height: 1055px;
+	}
+	&__content {
+		display: flex;
+
+		align-items: flex-start;
+		@extend .about__content;
+		flex-wrap: wrap;
+		justify-content: center;
+		@media screen and (max-width: 960px) {
+			top: 60px;
+		}
+	}
+	&__title {
+		width: 100%;
+
+		font-family: "IntroHeadB-GBaseShade";
+
+		@extend .about__title;
+		@media screen and (max-width: 960px) {
+			margin-bottom: 40px;
+
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.deal-support-item {
+	position: relative;
+
+	width: 230px;
+
+	text-align: center;
+
+	color: #fff;
+
+	font-family: "VentiCF-Bold";
+	font-size: em(19px);
+	@media screen and (max-width: 960px) {
+		width: 100%;
+	}
+	&:hover {
+		cursor: default;
+		&:before {
+			@include clockwise(10s);
+		}
+	}
+	&:before {
+		width: 178px;
+		height: 178px;
+		margin: 0 auto 27px;
+
+		background: url(%=staticPrefixForCss=%general/cogwheel-6.svg) no-repeat;
+		background-size: 178px 178px;
+
+		@include content(relative);
+	}
+	&:after {
+		right: 0;
+		left: 0;
+
+		margin: auto;
+
+		@include content;
+	}
+	&--1 {
+		&:after {
+			top: 49px;
+
+			width: 101px;
+			height: 75px;
+
+			background: url(%=staticPrefixForCss=%general/deal-support-1.svg) no-repeat;
+		}
+	}
+	&--2 {
+		@media screen and (max-width: 960px) {
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		&:after {
+			top: 39px;
+
+			width: 75px;
+			height: 101px;
+
+			background: url(%=staticPrefixForCss=%general/deal-support-2.svg) no-repeat;
+		}
+	}
+	&--3 {
+		&:after {
+			top: 39px;
+
+			width: 83px;
+			height: 103px;
+
+			background: url(%=staticPrefixForCss=%general/deal-support-3.svg) no-repeat;
+		}
+	}
+}

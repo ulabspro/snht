@@ -1,0 +1,185 @@
+.logo {
+	position: relative;
+	z-index: 100;
+
+	width: 252px;
+	height: 157px;
+	margin-top: 14px;
+
+	@media screen and (max-width: 960px) {
+		@include bg($logo-mobile);
+	}
+	&:hover {
+		.logo__cogwheel-main,
+		.logo__cogwheel-1,
+		.logo__cogwheel-2,
+		.logo__cogwheel-3,
+		.logo__cogwheel-4,
+		.logo__cogwheel-5 {
+			animation: none;
+		}
+	}
+	&:before,
+	&:after {
+		@include content;
+	}
+	&:before {
+		z-index: 1;
+		top: 61px;
+
+		width: 252px;
+		height: 48px;
+
+		background: url(%=staticPrefixForCss=%general/logo-back.svg) no-repeat;
+
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
+	}
+	&:after {
+		z-index: 20;
+		top: 72px;
+		right: 0;
+		left: 0;
+
+		width: 198px;
+		height: 48px;
+		margin: auto;
+
+		background: url(%=staticPrefixForCss=%general/logo-name.svg) no-repeat;
+		background-size: 198px 48px;
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
+	}
+	&__shadow {
+		position: absolute;
+		z-index: 0;
+		top: 22px;
+		right: 0;
+		left: 0;
+
+		width: 120px;
+		height: 120px;
+		margin: auto;
+
+		background: url(%=staticPrefixForCss=%general/logo-shadow.svg) no-repeat;
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
+	}
+	&__cogwheel-main {
+		position: absolute;
+		z-index: 11;
+		top: 0;
+		right: 0;
+		left: 0;
+
+		width: 157px;
+		height: 157px;
+		margin: auto;
+
+		background: url(%=staticPrefixForCss=%general/logo-cogwheel-2.svg) no-repeat;
+
+		@include clockwise(10s);
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
+	}
+	&__mainstay {
+		position: absolute;
+		z-index: 10;
+		top: 16px;
+		left: 95px;
+
+		width: 65px;
+		height: 67px;
+
+		background: url(%=staticPrefixForCss=%general/logo-mainstay.svg) no-repeat;
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
+	}
+	&__cogwheel-1 {
+		position: absolute;
+		z-index: 9;
+		top: 23px;
+		right: 76px;
+
+		width: 73px;
+		height: 73px;
+
+		background: url(%=staticPrefixForCss=%general/logo-cogwheel-1.svg) no-repeat;
+		background-size: 73px 73px;
+
+		@include clockwise(4s);
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
+	}
+	&__cogwheel-2 {
+		position: absolute;
+		z-index: 8;
+		z-index: 1;
+		top: 36px;
+		right: 132px;
+
+		width: 16px;
+		height: 16px;
+
+		background: url(%=staticPrefixForCss=%general/logo-cogwheel-3.svg) no-repeat;
+
+		@include counterclock-wise(3s);
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
+	}
+	&__cogwheel-3 {
+		position: absolute;
+		z-index: 7;
+		top: 56px;
+		right: 126px;
+
+		width: 40px;
+		height: 40px;
+
+		background: url(%=staticPrefixForCss=%general/logo-cogwheel-4.svg) no-repeat;
+
+		@include clockwise(4s);
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
+	}
+	&__cogwheel-4 {
+		position: absolute;
+		z-index: 8;
+		top: 102px;
+		right: 126px;
+
+		width: 23px;
+		height: 23px;
+
+		background: url(%=staticPrefixForCss=%general/logo-cogwheel-3.svg) no-repeat;
+
+		@include counterclock-wise(3s);
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
+	}
+	&__cogwheel-5 {
+		position: absolute;
+		z-index: 8;
+		top: 96px;
+		right: 100px;
+
+		width: 32px;
+		height: 32px;
+
+		background: url(%=staticPrefixForCss=%general/logo-cogwheel-3.svg) no-repeat;
+
+		@include clockwise(4s);
+		@media screen and (max-width: 960px) {
+			display: none;
+		}
+	}
+}
